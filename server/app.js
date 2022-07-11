@@ -14,4 +14,4 @@ app.register(autoload, {
   dir: join(__dirname, 'src/infra')
 })
 
-app.listen(process.env.PORT || 4000, '0.0.0.0')
+app.listen({ port: process.env.PORT || 4000, host: '0.0.0.0' })
